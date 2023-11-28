@@ -1,27 +1,61 @@
-# P1
+# Loja de Roupas - Atlética Fatec Ipiranga
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+Bem-vindo à loja de roupas da Atlética Fatec Ipiranga! Este projeto é uma aplicação web construída com Spring Boot para o backend e Angular para o frontend. A loja oferece funcionalidades essenciais para gerenciar clientes, produtos, cestas de compras e pedidos.
 
-## Development server
+## Funcionalidades
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### 1. Cliente
+   - **Cadastro de Clientes:** Os usuários podem se cadastrar como clientes, fornecendo informações como nome, endereço e informações de contato.
 
-## Code scaffolding
+### 2. Produto
+   - **Gestão de Produtos:** Administradores podem adicionar, editar e excluir produtos da loja. Cada produto possui informações como nome, descrição, preço e quantidade em estoque.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 3. Cesta
+   - **Cesta de Compras:** Os clientes podem adicionar produtos à cesta de compras enquanto navegam pela loja.
 
-## Build
+### 4. Pedido
+   - **Realização de Pedidos:** Os clientes podem revisar os itens em sua cesta e efetuar pedidos, fornecendo detalhes de entrega.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Estrutura do Projeto
 
-## Running unit tests
+O projeto está organizado em diversos diretórios, cada um responsável por uma funcionalidade específica. Além disso, há arquivos principais que desempenham papéis cruciais na aplicação.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Diretórios
 
-## Running end-to-end tests
+1. **cliente:** Contém os arquivos relacionados à funcionalidade de clientes.
+2. **produto:** Gerencia os produtos disponíveis na loja.
+3. **cesta:** Responsável pela lógica da cesta de compras.
+4. **pedido:** Envolve a realização e processamento de pedidos.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Arquivos Principais
 
-## Further help
+1. **AppController.java:** Controlador principal da aplicação Spring Boot.
+2. **ClienteComponent.ts:** Componente Angular para a gestão de clientes.
+3. **ProdutoService.java:** Serviço Spring Boot para a gestão de produtos.
+4. **CestaComponent.ts:** Componente Angular para a cesta de compras.
+5. **PedidoController.java:** Controlador Spring Boot para a realização de pedidos.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Como Rodar o Projeto
+
+Siga estas instruções para rodar a aplicação em seu ambiente local:
+
+1. **Backend (Spring Boot):**
+   - Navegue até o diretório `backend`.
+   - Execute o comando `./mvnw spring-boot:run` para iniciar o servidor.
+
+2. **Frontend (Angular):**
+   - Navegue até o diretório `frontend`.
+   - Execute o comando `ng serve` para iniciar o servidor de desenvolvimento.
+
+3. Abra o navegador e acesse `http://localhost:4200/` para visualizar a aplicação.
+
+## Capturas de Tela
+
+![Loja]()
+![Login]()
+
+## Como Contribuir
+
+Sua contribuição é valiosa para aprimorar esta loja de roupas! Se você tiver ideias, correções ou novas funcionalidades, fique à vontade para abrir uma issue ou enviar uma pull request.
+
+Agradecemos por contribuir para a loja de roupas da Atlética Fatec Ipiranga! 🎉
