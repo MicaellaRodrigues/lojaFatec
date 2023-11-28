@@ -49,10 +49,10 @@ Siga estas instruções para rodar a aplicação em seu ambiente local:
 
 3. Abra o navegador e acesse `http://localhost:4200/` para visualizar a aplicação.
 
-## Capturas de Tela
+## Imagens
 
-![Loja]()
-![Login]()
+<p>Home</p>
+<a href="https://imgur.com/UtmKs7D"><img src="https://i.imgur.com/UtmKs7D.png" title="source: imgur.com" /></a>
 
 ## Como Contribuir
 
