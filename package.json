@@ -1,0 +1,12 @@
+{
+  "name": "lojafatec",
+  "version": "1.0.0",
+  "description": "Bem-vindo à loja de roupas da Atlética Fatec Ipiranga! Este projeto é uma aplicação web construída com Spring Boot para o backend e Angular para o frontend. A loja oferece funcionalidades essenciais para gerenciar clientes, produtos, cestas de compras e pedidos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
