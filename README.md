@@ -2,6 +2,8 @@
 
 Bem-vindo à loja de roupas da Atlética Fatec Ipiranga! Este projeto é uma aplicação web construída com Spring Boot para o backend e Angular para o frontend. A loja oferece funcionalidades essenciais para gerenciar clientes, produtos, cestas de compras e pedidos.
 
+<a href="https://imgur.com/UtmKs7D"><img src="https://i.imgur.com/UtmKs7D.png" title="source: imgur.com" /></a>
+
 ## Funcionalidades
 
 ### 1. Cliente
@@ -48,11 +50,6 @@ Siga estas instruções para rodar a aplicação em seu ambiente local:
    - Execute o comando `ng serve` para iniciar o servidor de desenvolvimento.
 
 3. Abra o navegador e acesse `http://localhost:4200/` para visualizar a aplicação.
-
-## Imagens
-
-<p>Home</p>
-<a href="https://imgur.com/UtmKs7D"><img src="https://i.imgur.com/UtmKs7D.png" title="source: imgur.com" /></a>
 
 ## Como Contribuir
 
