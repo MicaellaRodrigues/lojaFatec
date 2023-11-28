@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: left;
+        }
+
+        .product-details {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+           
+        }
+
+        .product-description {
+            font-size: 16px;
+            margin-bottom: 20px;
+            font-weight: arial ;
+
+        }
+        .product-title {
+            font-size: 30px;
+            font-weight: arial;
+            margin-bottom: 10px;
+            color: #15055c;
+        }
+
+        .product-images {
+            /* display: flex; */
+            overflow-x: auto;
+            padding: 10px 0;
+            
+        }
+
+        .product-image {
+            flex: 0 0 auto;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            max-width: 200px;
+            
+        }
+
+        .product-size {
+            font-size: 18px;
+            margin-top: 20px;
+           
+        }
+
+        .buy-button {
+            background-color: #ecfc0b;
+            color: #15055c;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-details mt-4">
+            <h1 class="product-title">Samba Canção Branca Dark Horse</h1>
+            <p class="fw-bold">Descrição sobre o produto:</p>
+            <h3 class="product-description">Na busca pelo equilíbrio entre conforto e estilo durante sua jornada universitária? Apresentamos nosso Samba Canção Universitário, uma peça de vestuário que une o melhor dos dois mundos. Vista-se com conforto e estilo enquanto exibe seu orgulho universitário com nosso Samba Canção Universitário. Adquira o seu hoje e faça parte da moda acadêmica!</h3>
+            <h2 class="product-title">R$ 50,00</h2>
+
+            <div class="product-images">
+                <img class="product-image" src="https://produto-cheers.s3.amazonaws.com/media/product/c24547708fcfce934d85be09c6efbe959018085d22e5535811618ff54df04272.png" alt="Imagem 1" >
+                
+            </div>
+
+            <p class="product-size">Tamanho: 
+                <select>
+                    <option>PP</option>
+                    <option>P</option>
+                    <option>M</option>
+                    <option>G</option>
+                    <option>XG</option>
+                </select>
+            </p>
+
+            <button class="buy-button" onclick="location.href='/cesta'">Comprar</button>
+        </div>
+
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

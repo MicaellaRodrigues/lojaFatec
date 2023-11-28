@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" data-bs-theme="dark">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>Carrinho de Compras</h1>
+    <!-- Adicione a referência ao Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        /* Estilos CSS opcionais */
+        .container {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <h1 class="mt-4">Carrinho de Compras</h1>
+        
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th>Ítem</th>
+                    <th>Quantidade</th>
+                    <th>Valor Unitário</th>
+                    <th>Valor Total</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>Caneca + Tirante</td>
+                    <td>2</td>
+                    <td>R$ 35,00</td>
+                    <td>R$ 70,00</td>
+                </tr>
+                <tr>
+                    <td>Samba Canção</td>
+                    <td>1</td>
+                    <td>R$ 50,00</td>
+                    <td>R$ 50,00</td>
+                </tr>
+                <tr>
+                    <td>Valor Final</td>
+                    <td></td>
+                    <td></td>
+                    <td>R$ 120,00</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <!-- Botões de ação -->
+        <div>
+            <button class="btn btn-dark" id="clear-cart">Limpar Cesta</button><br><br>
+            <a href="index.html" class="btn btn-dark">Finalizar Compra</a>
+        </div>
+    </div>
+
+    <!-- Adicione a referência ao Bootstrap JS (opcional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
