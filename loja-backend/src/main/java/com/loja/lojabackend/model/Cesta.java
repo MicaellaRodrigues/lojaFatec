@@ -10,24 +10,24 @@ import lombok.Data;
 @Data
 @Entity
 
-public class Produto {
+public class Cesta {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(length = 120, nullable = false)
-    private String nomeProduto;
-
-    @Column(length = 120, nullable = false)
-    private String descricao;
-
-    @Column(length = 1, nullable = false)
-    private String tamanho;
+    @Column(length = 100, nullable = false)
+    private String item;
 
     @Column(length = 50, nullable = false)
-    private double valorProduto;
+    private double quantidade;
 
-    @Column(length = 10, nullable = false)
-    private int codProduto;
+    @Column(length = 50, nullable = false)
+    private double valorUnitario;
+
+    @Column(length = 50, nullable = false)
+    private double valorTotal;
+
+    @Column(length = 50, nullable = false)
+    private double valorFinal;
 
 }
