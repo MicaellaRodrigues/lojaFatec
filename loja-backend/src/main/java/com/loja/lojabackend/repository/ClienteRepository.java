@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 import com.loja.lojabackend.model.Cliente;
 
 @Repository
-public interface ClienteRepository extends JpaRepository<Long, Cliente> {
+public interface ClienteRepository extends JpaRepository<Cliente, Long> {
 
 }
