@@ -4,11 +4,12 @@ import { first } from 'rxjs';
 import { Cadastro } from '../interfaces/cadastro';
 
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class CadastroServiceService {
-  private readonly API = 'http://localhost:8080/api/cliente';
+  private readonly API = 'api/cliente';
 
   constructor(private httpClient: HttpClient) { }
 

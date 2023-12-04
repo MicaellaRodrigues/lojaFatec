@@ -17,7 +17,9 @@ import { VitrineComponent } from './vitrine/vitrine.component';
 import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 
 
@@ -34,22 +36,27 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     PaginaCadastroComponent,
     SambacComponent,
-    VitrineComponent
+    VitrineComponent,
+
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgxMaskDirective,
     NgxMaskPipe,
+    HttpClientModule,   
+    MatFormFieldModule,
+    BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
-    
+    MatSnackBarModule
+
     
     
   ],
   providers: [provideNgxMask()],
-  bootstrap: [AppComponent,],
+  bootstrap: [AppComponent],
   
 })
 export class AppModule { }

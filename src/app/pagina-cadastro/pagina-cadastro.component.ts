@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CadastroServiceService } from '../services/cadastro-service.service';
 import { lastValueFrom } from 'rxjs';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-pagina-cadastro',
@@ -14,21 +17,23 @@ export class PaginaCadastroComponent {
 
   constructor(
     private formBuilder: FormBuilder,
-    private cadastroService: CadastroServiceService
+    private mSnack: MatSnackBar,
+    private cadastroService: CadastroServiceService,
+    private router: Router
   ) {
     this.cadastroForm = this.formBuilder.group({
       nome: ['', Validators.required],
       sobrenome: ['', Validators.required],
       dataNascimento: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
-      senha: ['', [Validators.required, Validators.minLength(6)]],
+      email: ['', [Validators.required,]],
+      senha: ['', [Validators.required,]],
       cpf: ['', Validators.required],
       celular: ['', Validators.required],
       rua: ['', Validators.required],
       cep: ['', Validators.required],
       bairro: ['', Validators.required],
       cidade: ['', Validators.required],
-      estado: ['', Validators.required],
+      estado: ['', Validators.required,],
       aceitoTermos: [false, Validators.requiredTrue]
     });
   }
@@ -38,15 +43,29 @@ export class PaginaCadastroComponent {
       if (this.cadastroForm.valid) {
         const cadastroData = this.cadastroForm.value;
         const response = await lastValueFrom(this.cadastroService.save(cadastroData));
-        console.log('Cadastro realizado com sucesso!', response);
-        // Lógica adicional após o cadastro bem-sucedido, se necessário
+        this.alert('Cadastro realizado com sucesso!', response);
+        setTimeout(() => {
+          location.reload();
+        }, 500);
+        // this.router.navigate(['pagina_cadastro']);
+
+
       } else {
-        console.log('Formulário inválido. Verifique os campos.');
+        this.alert('Formulário inválido. Verifique os campos.');
       }
     } catch (error) {
-      console.error('Erro ao cadastrar:', error);
-      // Lógica adicional para lidar com erros, se necessário
+      this.alert('Erro ao cadastrar');
+
     }
   }
-  
+
+  alert(message: string, response?: any) {
+    this.mSnack.open(message, 'X', {
+      duration: 2000,
+      horizontalPosition: 'end',
+      verticalPosition: 'top',
+    });
+  }
+
+
 }

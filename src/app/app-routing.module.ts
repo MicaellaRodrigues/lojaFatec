@@ -12,9 +12,6 @@ import { EsqueciSenhaComponent } from './esqueci-senha/esqueci-senha.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { PaginaCadastroComponent } from './pagina-cadastro/pagina-cadastro.component';
 
-
-
-
 const routes: Routes = [
 { path: 'busca' , component: BuscaComponent},
 { path: 'login' , component: LoginComponent}, 
@@ -32,6 +29,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
+
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
