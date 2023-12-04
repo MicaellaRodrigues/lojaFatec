@@ -1,14 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
 header {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #103560;
     color: #fff;
     padding: 10px 0;
     text-align: center;
-    /* background-image: url(https://produto-cheers.s3.amazonaws.com/media/product/2ae9c97e922022b7fafd1b2644b6d20c194a11e34978ccf142863311580d20fa.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-  background-position: top; */
+
 
 }
 
@@ -25,14 +24,19 @@ header {
     width: 200px;
 }
 
-/* #cart-button {
-    background-color: #f3f708;
-    color:black;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-} */
+input{
+    border-style: solid;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+label{
+    margin-bottom: .5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
 
 @media (max-width: 1024px){
     #search-bar{

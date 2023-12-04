@@ -1,0 +1,13 @@
+.container {
+    width: 40vw;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(206, 206, 206, 0.363);
+    box-shadow: 10px 0 10px white(0, 0, 0, 0.2);
+    border-radius: .2rem;
+}
+
+
+.form-check-label {
+    font-weight: normal;
+}
