@@ -2,61 +2,63 @@
         <h1 class="mb-4" class="fs-1" color="white">Cadastro</h1>
         <h2 class ="arial" class="fs-6">Faça seu cadastro</h2><br>
         
-        <form>
-            <div class="form-group ">
-                <label for="nome">Nome</label>
-                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+        <form [formGroup]="cadastroForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" formControlName="nome">
             </div>
             <div class="form-group">
-                <label for="sobrenome">Sobrenome</label>
-                <input type="text" class="form-control" id="sobrenome" placeholder="Digite seu sobrenome">
+              <label for="sobrenome">Sobrenome</label>
+              <input type="text" class="form-control" id="sobrenome" placeholder="Digite seu sobrenome" formControlName="sobrenome">
             </div>
             <div class="form-group">
-                <label for="dataNascimento">Data de Nascimento</label>
-                <input type="text" class="form-control" id="dataNascimento" placeholder="Digite sua data de nascimento">
+              <label for="dataNascimento">Data de Nascimento</label>
+              <input type="text" mask="d0/M0/0000" class="form-control" id="dataNascimento" placeholder="Digite sua data de nascimento" formControlName="dataNascimento">
             </div>
             <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Digite seu email" formControlName="email">
             </div>
             <div class="form-group">
-                <label for="senha">Senha<span>*</span></label>
-                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required>
+              <label for="senha">Senha<span>*</span></label>
+              <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" formControlName="senha" required>
             </div>
             <div class="form-group">
-                <label for="cpf">CPF</label>
-                <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF">
+              <label for="cpf">CPF</label>
+              <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF" formControlName="cpf">
             </div>
             <div class="form-group">
-                <label for="celular">Celular</label>
-                <input type="tel" class="form-control" id="celular" placeholder="Digite seu celular">
+              <label for="celular">Celular</label>
+              <input type="tel" class="form-control" id="celular" placeholder="Digite seu celular" formControlName="celular">
             </div>
             <div class="form-group">
-                <label for="rua">Rua</label>
-                <input type="text" class="form-control" id="rua" placeholder="Digite sua rua">
+              <label for="rua">Rua</label>
+              <input type="text" class="form-control" id="rua" placeholder="Digite sua rua" formControlName="rua">
             </div>
             <div class="form-group">
-                <label for="cep">CEP</label>
-                <input type="text" class="form-control" id="cep" placeholder="Digite seu CEP">
+              <label for="cep">CEP</label>
+              <input type="text" class="form-control" id="cep" placeholder="Digite seu CEP" formControlName="cep">
             </div>
             <div class="form-group">
-                <label for="bairro">Bairro</label>
-                <input type="text" class="form-control" id="bairro" placeholder="Digite seu bairro">
+              <label for="bairro">Bairro</label>
+              <input type="text" class="form-control" id="bairro" placeholder="Digite seu bairro" formControlName="bairro">
             </div>
             <div class="form-group">
-                <label for="cidade">Cidade</label>
-                <input type="text" class="form-control" id="cidade" placeholder="Digite sua cidade">
+              <label for="cidade">Cidade</label>
+              <input type="text" class="form-control" id="cidade" placeholder="Digite sua cidade" formControlName="cidade">
             </div>
             <div class="form-group">
-                <label for="estado">Estado</label>
-                <input type="text" class="form-control" id="estado" placeholder="Digite seu estado">
+              <label for="estado">Estado</label>
+              <input type="text" class="form-control" id="estado" placeholder="Digite seu estado" formControlName="estado">
             </div>
             <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="aceito-termos">
-                <label class="form-check-label" for="aceito-termos">Li e concordo com os termos</label>
+              <input type="checkbox" class="form-check-input" id="aceito-termos" formControlName="aceitoTermos">
+              <label class="form-check-label" for="aceito-termos">Li e concordo com os termos</label>
             </div>
-            <br><button type="submit" class="btn btn-dark">Cadastrar</button>
-        </form>
+            <br>
+            <button type="submit" class="btn btn-dark">Cadastrar</button>
+          </form>
+          
         
     </section>
 

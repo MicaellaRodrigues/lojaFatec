@@ -17,8 +17,3 @@ button{
     width: 50%;
     text-align: center;
 }
-
-input{
-    border-style: solid;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}

@@ -39,7 +39,7 @@ public class Cliente {
     @Column(length = 100, nullable = false)
     private String rua;
 
-    @Column(length = 8, nullable = false)
+    @Column(length = 15, nullable = false)
     private String cep;
 
     @Column(length = 50, nullable = false)

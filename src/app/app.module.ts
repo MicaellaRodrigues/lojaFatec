@@ -14,6 +14,12 @@ import { LoginComponent } from './login/login.component';
 import { PaginaCadastroComponent } from './pagina-cadastro/pagina-cadastro.component';
 import { SambacComponent } from './sambac/sambac.component';
 import { VitrineComponent } from './vitrine/vitrine.component';
+import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+
+
 
 @NgModule({
   declarations: [
@@ -32,9 +38,18 @@ import { VitrineComponent } from './vitrine/vitrine.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxMaskDirective,
+    NgxMaskPipe,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
+    
+    
+    
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [provideNgxMask()],
+  bootstrap: [AppComponent,],
+  
 })
 export class AppModule { }
